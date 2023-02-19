@@ -74,4 +74,89 @@ let value4 = true
 let value5 = false
 console.log(value1 || value2)
 
+//conditions and loop
 
+//If-else
+
+// let age = 17;
+// if(age>=18){
+//     console.log("You are Allowed");
+// }
+// else {
+//     console.log("You are not allowed");
+// }
+
+// Else-if
+
+// let signal = "green";
+// if(signal=="red"){
+//     console.log9("Red => stop")
+// } //condition 1
+// else if (signal =="yellow"){
+//     console.log("Yellow =>ready to go")
+// } //condition 2
+// else if (signal =="green"){
+//     console.log("Yellow =>ready to go")
+// } //condition 3
+// else{
+//     console.log("invalid")
+// } //last
+
+
+//Switch case
+
+let user = "admin";
+switch(user){
+    case "admin":
+        console.log("He is admin");
+        break;
+
+    case "student":
+        console.log("He is student");
+        break;
+
+    case "mentor":
+        console.log("He is mentor");
+        break;
+
+        default :
+        console.log("you have no permission");
+
+}
+
+//Loops
+
+//do while, while, for
+
+//for loop (init, condition, inc/dec)
+console.log("for loop");
+
+for(let i=0; i<5; i++){
+    console.log(i);
+}
+
+// while (init, condition, inc/dec)
+
+console.log("while loop");
+
+let i = 0;          //init
+while(i<5){         //condition
+    console.log(i);
+    i++             //inc
+}
+
+//do while
+console.log("do while loop");
+
+let m = 0;
+do{
+    console.log(m);
+    m++;
+}while(m<5);
+
+//Ternary operater
+//condition ? TRUE : FALSE
+console.log("ternary operater");
+
+isloggedin = false;
+isloggedin ? console.log("Home page") : console.log("Login page") ;
