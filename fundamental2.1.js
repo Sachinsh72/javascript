@@ -20,10 +20,10 @@ console.log(message);
 
 //with parameter
 
-function myFunction(x, y = 10) {
-    return x + y;
-  }
-  myFunction(5);
+// function myFunction(x, y = 10) {
+//     return x + y;
+//   }
+//   myFunction(5);
 
 // function sum(x, y){
 //     return x + y;
@@ -46,5 +46,11 @@ function myFunction(x, y = 10) {
 // displayMessage("default message Hiiiii");
 
 // displayMessage();
+
+
+let arr=[12,13,14,15];
+let pop =arr.pop();
+console.log(pop);
+console.log(arr);
 
 
