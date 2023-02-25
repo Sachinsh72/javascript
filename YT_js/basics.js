@@ -25,5 +25,21 @@ console.log("---------DataType-------------");
 
 "use strict"; //treat all JS code as newer version
 
-//alert(3+3);  //we are using node, not browser
+//alert( 3 + 3 );  //we are using node, not browser
+
+//code readeability should be high
+
+let name = "sachin"; //String data type " "
+let age = 23 ; // number - 2 to power 53, bigint = for big number
+let isLoggedIn = false //boolean - true/false
+//undefined - not defined
+//null - standalone value
+//symbol - unique
+
+// typeOf - to know the typw of data
+console.log(typeof null); // null is object
+console.log(typeof undefined); // undefined
+console.log(typeof "sachin"); // string type
+
+
 
