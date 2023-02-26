@@ -1,4 +1,4 @@
-// Array - it stores ordered list of elements. it can hold elements of any data type. Array are a type of object in js and have a number of built-in methods for adding, removing, and manipulating elements.
+// -------------Array - it stores ordered list of elements. it can hold elements of any data type. Array are a type of object in js and have a number of built-in methods for adding, removing, and manipulating elements.
  //need - grouping related data, storing large amount of data, improving performance, ease of use, better readability
 
  let a = [1,2,3,"sachin", 3.4];
@@ -96,5 +96,79 @@ greet();
 
 sqr(8); // 8-->arguments
 
-let a =sqr(8);
+// let a =sqr(8);
 console.log(a);
+
+//------------Object - An object is an entity with a certain state and behaviour. eg car,cycle, glass
+// objects can contain amny values
+// Object values are written as key : value pairs - eg. let person = {firstName : "Sachin", lastNme : "sharma", age : 23};
+
+
+// creation of object
+//1st way
+let obj = {id : 101, naam : "Sachin Sharma", salary : 95000 };
+console.log(obj);
+
+//2nd way
+let emp = new Object();
+emp.id =102;
+emp.name = "Ankur";
+console.log(emp);
+
+//3rd way
+function Emp(i, n, s){
+    this.id = i;
+    this.name = n;
+    this.salary = s;
+}
+
+const e =new Emp(103,"Sachin", 99000);
+
+console.log(e);
+console.log(emp.id); //call a value form object by dot operator
+console.log(emp["name"]); //call value by square operator
+
+emp.salary = 99999;  // you can update a value by targeting particular name
+
+console.log(emp.salary);
+
+emp["name"] = "Ankur Sharma";
+
+delete emp.id; // delete
+
+console.log(emp);
+
+
+//Object function & methods
+
+// fetching keys of an object
+let keys = Object.keys(emp);
+console.log(keys);
+
+// fetching values
+let values = Object.values(emp);
+console.log(values);
+
+// feteching keys and values both at a time
+let entries = Object.entries(emp);
+console.log(entries);
+
+// not updating/adding and key/value an object in future
+
+// Object.freeze(emp);
+// emp.name = "randome";
+// console.log(emp);
+
+//only allow upadte not add or delete key value pair
+Object.seal(emp);
+emp.name="update name";
+emp.id = 9090;
+console.log(emp);
+
+// for assigning the one objcet in other object with same or extra key value pair
+
+let o = Object.assign({},emp);
+console.log(o);
+
+let assign = Object.assign({ x : 15},emp);
+console.log(assign);
