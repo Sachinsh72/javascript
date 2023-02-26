@@ -23,3 +23,28 @@ console.log(output3);
 const object = (x,y)=>({sum : x+y, difference: x-y});
 let output4 = object(5,3);
 
+
+//------------------Anonymous functions - function without name actually store in any variable so call the function with the calling variable
+
+let anony = function(){
+    console.log("Anonymous function");
+
+};
+
+anony(); // calling anonymous funtion
+
+//imidiatally invoked funtion function -- invoked/call only one time where it is declared  --- also known as self invoking function
+     
+// named function
+(function imif(){
+    console.log("Imidiate function invoked")
+})();
+
+ // anonymous function
+(function (t){
+    console.log(t*t);
+})(5);
+
+//-------------Expression function - anonymous funtion is also a function expression, any function store in variable or pass in any function called express funtion.
+
+
