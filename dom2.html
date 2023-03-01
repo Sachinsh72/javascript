@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Part 2</title>
+</head>
+<body>
+    <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+    </ul>
+
+    <h1>Tap anywhere</h1>
+    <p id="js"> </p>
+
+    <button ondblclick="hey()" id="jss">Submit</button>
+    <script>
+        //----------Part 2
+
+        //Append Child
+        let title = document.createElement("h1");
+        title.className = "dom";
+        title.style.fontSize = "25px";
+        title.textContent = "Created by DOM";
+        console.log(title);
+        document.body.appendChild(title);
+
+        //Remove child
+        let ul = document.querySelector("ul");
+        console.log(ul);
+
+        let list = document.querySelectorAll("li");
+        console.log(list);
+        for(lists of list){
+            ul.removeChild(lists);
+        }
+
+        //----------Part 3
+
+        //Event listner on full web page
+        document.addEventListener("click", tap); // document.addEventListener(event, function);
+        // event type - click, dblclick, mouseenter,
+        function tap(){
+            document.getElementById("js").innerText = "we are here to create event mean when you tap then a popup will come will the content.";
+
+        }
+
+
+        // click on button
+        function hey(){
+            document.getElementById("jss").innerText="namaste";
+            document.getElementById("jss").style.color = "red";
+            document.getElementById("jss").style.backgroundColor ="black";
+            document.getElementById("jss").style.padding = "10px";
+            document.getElementById("jss").style.border = "2px solid blue";
+        }
+
+
+
+
+    </script>
+
+</body>
+</html>
