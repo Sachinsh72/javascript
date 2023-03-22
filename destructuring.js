@@ -1,4 +1,7 @@
-// Destcruting, Spread and Rest 
+// Part 1 : Destcruting, Spread and Rest 
+
+
+//++++++++++ Spread +++++++++++++++
 
 const oneArray = [1,2,3,4];
 const twoArray = [5,6,7,8];
@@ -13,5 +16,59 @@ console.log(thirdArray);
 const spreadOperator =[...oneArray, ...twoArray]; //by spread operator
 console.log(spreadOperator);
 
+//++++++++++++++++++++++++++++
+//++++++++++ REST (reverse of spread) +++++++++++++++
+// array from object
+
+function manyArguments(){
+    console.log(typeof arguments);
+    let args = Array.from(arguments)
+    let finalArr = args.map( e => e )
+    console.log(finalArr);
+}
+
+manyArguments(1,2,3,4,5,6,7);
+// manyArguments(5,4,3,2,1,9,8,7,6);
+
+//now by rest operator
+
+function manyArguments2(...args){
+    console.log(typeof agrs);
+    let finalArr = args.map(e => e*2);
+    console.log(finalArr);
+}
+
+manyArguments2(1,2,3,4,5,6,7);
+// manyArguments2(5,4,3,2,1,9,8,7,6);
 
 
+// ++++++++++++  examples +++++++++++++++++++++
+
+const names = ["superman", "flash"];
+const newNames = ["batman", ...names, "thor"];  //spread
+console.log(newNames);  
+
+const myname = "sachin";
+console.log([...myname]);   //spread
+
+function restOperator(...values){
+    return values;
+}
+console.log(restOperator("sachin","sharma"));  //REST - here we get value then convert it into array
+
+
+// ----------------------------------------
+
+// Part 2 : Sets and Map 
+
+let emptySet = new Set();
+
+console.log(emptySet.size);
+
+let myArray = [1,2,3,3,2,4];
+let newSet = new Set(myArray);
+console.log(newSet);
+
+newSet.add(9);
+console.log(newSet);
+console.log(newSet.has(9));
