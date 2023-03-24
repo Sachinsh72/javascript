@@ -77,4 +77,3 @@ console.log(newSet.has(9));
 let newSet2 = new Set([11,22,33,44,55,66]);
 console.log(newSet2);
 console.log(...newSet2); //spread
-
