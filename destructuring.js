@@ -61,6 +61,9 @@ console.log(restOperator("sachin","sharma"));  //REST - here we get value then c
 
 // Part 2 : Sets and Map 
 
+
+//SET
+
 let emptySet = new Set();
 
 console.log(emptySet.size);
@@ -82,8 +85,25 @@ console.log(...newSet2); //spread
 
 // Set difference
 // setA = [1,2,3,4,5];
+// setB = [1,2,6,5,3];
 
 function setDifference(setA, setB){
     return new Set([...setA].filter(el => !setB.has(el)));   
 }
+
+
+// Map
+
+let map = new Map();
+console.log(map.size);
+
+let arrray = [
+    [1,"Methun"],
+    [2,"Alka"],
+    [3,"Suman"],
+    [4, "Rajesh"]
+];
+
+arrray.map((arrItem) => map.set(arrItem[0],arrItem[1]));
+
 
