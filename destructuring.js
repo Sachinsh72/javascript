@@ -70,6 +70,8 @@ let newSet = new Set(myArray);
 console.log(newSet);
 
 newSet.add(9);
+console.log(newSet.has(9));
+newSet.clear();
 newSet.delete(1);
 console.log(newSet);
 console.log(newSet.has(9));
@@ -77,3 +79,11 @@ console.log(newSet.has(9));
 let newSet2 = new Set([11,22,33,44,55,66]);
 console.log(newSet2);
 console.log(...newSet2); //spread
+
+// Set difference
+// setA = [1,2,3,4,5];
+
+function setDifference(setA, setB){
+    return new Set([...setA].filter(el => !setB.has(el)));   
+}
+
