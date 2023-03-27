@@ -15,8 +15,41 @@
     }
  }
 
- const p =new Product();
+ const p = new Product(); // new creates an empty plain object
+ // in the above we are calling the constructor method
  console.log(p);
  p.display();
 
- //**********************************************
+
+ //*************** Constructor *******************************
+
+ class Prodt{
+    // name;
+    // price;
+    // rating;
+
+    constructor(n, p, r){
+        console.log("calling the constructor");
+        this.name = n;
+        this.price = p;
+        this.rating = r;
+        // return 10; if you returning primitive it will be avoided in constructor
+        // return {x:0, y:20};
+        // return this;
+    }
+
+    dis(){
+        console.log("displaying the current product");
+        console.log(" this refers to ", this);
+        console.log("displaying the current product", this.name
+        , this.price, this.rating);
+    }
+ }
+
+ const c = new Prodt("iphone", 100000, 5); // new creates an empty plain object
+ // in the above we are calling the constructor method
+
+ console.log(c);
+ c.dis();
+
+
