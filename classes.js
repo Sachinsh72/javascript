@@ -51,5 +51,3 @@
 
  console.log(c);
  c.dis();
-
-
