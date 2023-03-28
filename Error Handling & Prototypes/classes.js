@@ -49,5 +49,8 @@
  const c = new Prodt("iphone", 100000, 5); // new creates an empty plain object
  // in the above we are calling the constructor method
 
- console.log(c);
- c.dis();
+ console.log(c);  // to exceute object
+ c.dis();  // to execute member function or behaviour
+
+ // Class introducted in ES6 so before this blueprinting is using function consturctor for more got to -> functionConstructor.js file
+
