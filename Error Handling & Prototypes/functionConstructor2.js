@@ -31,4 +31,3 @@ let obj = {
 
 }
 obj.fun2();
-
