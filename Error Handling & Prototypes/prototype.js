@@ -22,8 +22,8 @@ Array.prototype.heySachin = function() {
     
 }
 
-console.log(myHeros.heySachin());
-console.log(heropower.heySachin());
+// console.log(myHeros.heySachin());
+// console.log(heropower.heySachin());
 
 //inheritance
 
@@ -42,5 +42,22 @@ const TeachingSupport = {
 
 const TAAssistant = {
     makeAssignment : "js Assignment",
-    fullTime : true
+    fullTime : true,
+    __proto__: TeachingSupport  //old way
 }
+
+Teacher.__proto__ = User    // outside overright
+
+Object.setPrototypeOf(TeachingSupport, Teacher) // new way
+
+console.log(TAAssistant.isAvailable);
+
+String.prototype.truelenght = function() {
+    console.log("ture length is", this.trim().length);
+}
+
+"sachin.     ".truelenght();
+"sach.         ".truelenght();
+
+"sachin.     ".truelenght();
+console.log();
