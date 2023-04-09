@@ -26,6 +26,7 @@ consume();
 
 console.log("end");
 
+
 //fetch api - run below code in browser console
 
 // fetch("http://type.fit/api/quotes")
