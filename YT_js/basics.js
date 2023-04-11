@@ -40,6 +40,3 @@ let isLoggedIn = false //boolean - true/false
 console.log(typeof null); // null is object
 console.log(typeof undefined); // undefined
 console.log(typeof "sachin"); // string type
-
-
-
