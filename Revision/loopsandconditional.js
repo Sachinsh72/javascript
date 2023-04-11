@@ -1,5 +1,46 @@
-//----------Loops 
+//----------Loops --- also called Iteration
 
+//For loop
+
+for(let i=0; i<5; i++){
+    console.log(i);
+};
+
+let arr = ["pw", "bmw", "audi"];
+
+for(let i=0; i<arr.length; i++){
+    console.log("At index " + i + " value is " + arr[i]);
+};
+
+
+// For In loop
+
+let obj = {
+    name : "sachin",
+    education : "graduate",
+    age : 23
+}
+
+for( const i in obj){
+    console.log(i);
+    console.log(obj[i]);
+}
+
+// For of loop
+
+for (const ite of arr) {
+    console.log(ite);
+}
+
+
+// While loop
+
+let newI = 0;
+
+while (newI <=5) {
+    console.log("value of i is " + newI);
+    newI = newI + 2;
+}
 
 
 //----------Conditionals
