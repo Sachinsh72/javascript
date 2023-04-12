@@ -13,7 +13,7 @@ for(let i=0; i<arr.length; i++){
 };
 
 
-// For In loop
+// For In loop - object
 
 let obj = {
     name : "sachin",
@@ -26,7 +26,7 @@ for( const i in obj){
     console.log(obj[i]);
 }
 
-// For of loop
+// For of loop - array
 
 for (const ite of arr) {
     console.log(ite);
