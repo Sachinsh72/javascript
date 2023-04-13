@@ -12,7 +12,25 @@ names[4] = "Ajay Kumar"
 
 let naam = new Array("Sachin", "Ankur", "Aman", "jayant");
 
-//enter a new naam
+// Array Methods 
+
+//push - insert a new naam
 
 naam.push("Anurag");
 console.log(naam);
+
+//pop - remove from the end
+
+// naam.pop();
+console.log(naam.pop());
+console.log(naam);
+
+// how to find index place 
+console.log(naam.indexOf("Ankur"));
+//how to find value at particular place
+console.log(naam.at(1));
+
+//shift and unshift
+
+console.log(naam.shift(1));  //value from first
+console.log(naam.unshift("Sharma")); 
