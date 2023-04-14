@@ -56,3 +56,4 @@ console.log(number.reverse());
 
 let arr = [1,"a",2, "c", 3, "A"];
 console.log(arr.sort());
+
