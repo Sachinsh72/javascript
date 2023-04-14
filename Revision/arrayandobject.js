@@ -14,8 +14,7 @@ let naam = new Array("Sachin", "Ankur", "Aman", "jayant");
 
 // Array Methods 
 
-//push - insert a new naam
-
+//push - insert a new naam at end
 naam.push("Anurag");
 console.log(naam);
 
@@ -32,5 +31,28 @@ console.log(naam.at(1));
 
 //shift and unshift
 
-console.log(naam.shift(1));  //value from first
-console.log(naam.unshift("Sharma")); 
+console.log(naam.shift());  //remove from start
+console.log(naam);
+
+console.log(naam.unshift("Sharma"));  //Inserts new elements at the start of an array, and returns the new length of the array.
+console.log(naam);
+
+//Slice
+console.log(naam.slice(0,2)); //cutting - new array will return
+
+// console.log(naam);
+
+//splice
+
+console.log(naam.splice(2,2));     //(1 : cutt start from index 1, 2 : total count ) it will return new array
+
+//reverse
+
+let number = new Array(1,2,3,4,5,6,7,8);
+
+console.log(number);
+
+console.log(number.reverse());
+
+let arr = [1,"a",2, "c", 3, "A"];
+console.log(arr.sort());
