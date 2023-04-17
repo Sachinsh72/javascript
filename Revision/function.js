@@ -57,12 +57,59 @@ function cartBillTotal(...numbers){
     let total = 0;
     //looop all values and keep adding to total
     for(const num of number){
-        total ==num;
+        total +=num;
+        // total = total + num ;
     };
     //return total
     return total;
 };
 
+//--------------------------------------------------
 
+const userAmazon = {
+    id : "123",
+    name : "Sachin",
+    email : "sachin@gmail.com"
+}
+
+function addUser(obj){
+    // console.log('A user name ' + obj.name + ' got an email' + obj.email);
+    console.log(`A user name ${obj.name} got an email ${obj.email}`);
+}
+
+addUser(userAmazon);
+
+//--------------------------------------------------
+
+//Arrow function
+
+function addtionTwoNum(a,b){            //regular function
+    return a+b;
+};
+
+const additionTwoNumV2 = (a,b) => {         //arrow function
+    return a+b;
+}
+
+const additionTwoNumV3 = (a,b) => a+b;    // if one line code then this syntax can be used and it default return value .
+
+
+const additionTwoNumV4 = a => 5;  //implicit return
+
+const additionTwoNumV5 = a => ({email : "sachin@gmail.com"});    // for objec return
+
+const additionTwoNumV6 = (a,b) => ({email : "sachin@gmail.com"}); 
+
+
+function learning(){
+    console.log(this);      // this : global value - hard core value depends upon environment
+}
+
+const learningTwo = () => {
+    console.log(this);      // this : empty
+}
+
+// learning();
+learningTwo();
 
 
