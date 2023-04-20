@@ -43,3 +43,11 @@ const obj5 = {
     isloggedIn : true
 }
 
+// Object.freeze(obj5)
+
+obj5.email = "amankumar@gmail.co"
+obj5["isloggedIn"] = false;
+
+console.log(obj5);
+console.log(Object.keys(obj5));
+console.log(Object.values(obj5));
