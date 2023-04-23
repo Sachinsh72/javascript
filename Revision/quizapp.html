@@ -35,7 +35,7 @@
 
             {
                 question : "What is the capital of France",
-                answer : {
+                answers : {
                     a : "Paris",
                     b : "London",
                     c : "New York"
@@ -46,6 +46,24 @@
         ]
 
         function buildQuiz(){
+
+            const output = [];
+
+            myQuestions.forEach((currentQuestion, questionNumber)=>{
+                const answers = []
+
+                for(letter in currentQuestion.answers){
+                    answers.push(
+                        `<label>
+                         <input type =radio name="questions ${questionNumber} value = "${letter}"/>
+                         ${letter} :
+                         ${currentQuestion.answers[letter]}
+                            </label>`
+                    )
+                }
+
+                output.push()
+            })
             
         }
         function showResults(){
