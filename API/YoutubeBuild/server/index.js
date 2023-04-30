@@ -1,12 +1,25 @@
+//Server
 
-const express = require('express')
-const app = express()
-const port = 3000
+//------------ copied from documentation
 
-app.get('/youtube', (req, res) => {
-  res.send('Hello Sachin Sharma')
-})
+// const express = require('express')
+// const app = express()
+// const port = 3000
 
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
+// app.get('/youtube', (req, res) => {
+//   res.send('Hello Sachin Sharma')
+// })
+
+// app.listen(port, () => {
+//   console.log(`Example app listening on port ${port}`)
+// })
+
+//----------- fresh from scratch
+
+const app = require("./app.js")
+
+const PORT = 4000
+
+app.listen(PORT, ()=>{
+  console.log("server is listening at 4000");
 })
