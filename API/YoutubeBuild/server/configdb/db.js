@@ -7,7 +7,6 @@ const connectToDB = async () => {
     mongoose.connect(process.env.MONGO_URI)
     .then((conn) => {
         console.log('Db CONNECTED');
-
     })
     .catch((err) => {
         console.log(err);
