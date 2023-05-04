@@ -51,3 +51,14 @@ obj5["isloggedIn"] = false;
 console.log(obj5);
 console.log(Object.keys(obj5));
 console.log(Object.values(obj5));
+
+//------------------------------
+
+const username2 = {
+    name2 : "Sachin sharma",
+    email2 : "sachin@gmail.com"
+}
+
+console.log(username2.name2);
+
+
