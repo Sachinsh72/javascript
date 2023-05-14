@@ -34,5 +34,4 @@ rst.addEventListener("click",reset)
 
 function reset(){
     value.innerText = 0
-    
 }
