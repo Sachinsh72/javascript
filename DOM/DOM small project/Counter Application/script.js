@@ -10,7 +10,7 @@ decr.addEventListener("click", decrement)
 
 function decrement(){
     if(value.innerText = 0){
-        number--
+        value.innerText--
     }
     else{
         value.innerText = number--
