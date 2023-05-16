@@ -88,12 +88,3 @@ function unlimitedSum(){
 
 let sumResult = unlimitedSum(1,1,1,1,1,1,1,1,1,1);
 console.log(sumResult);
-
-
-
-
-
-
-
-
-
