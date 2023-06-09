@@ -1,37 +1,25 @@
-// value 
-var number = 0;
+// buttons and counter text 
+const counter = document.querySelector('#counter');
+const btns = document.querySelectorAll('.btn');
 
-const value = document.getElementById("value")
+// console.log(btns);
 
-// decrement 
-const decr = document.getElementById("decrement")
+//initialze the count variable
+let count = 0;
 
-decr.addEventListener("click", decrement)
+btns.forEach((btn)=> {
+    btn.addEventListener('click',(e)=> {
 
-function decrement(){
-    if(value.innerText = 0){
-        value.innerText--
-    }
-    else{
-        value.innerText = number--
-    }
-}
+        const styles = e.currentTarget.classList
 
-// increment
-const incre = document.getElementById("increment")
+        if(styles.contains('increment')){
+            count++;
+        } else if(styles.contains('decrement')){
+            count--;
+        } else {
+            count=0;
+        }
 
-incre.addEventListener("click", increment)
-
-function increment(){
-    number++
-    value.innerText = number
-}
-
-// reset 
-const rst = document.getElementById("reset")
-
-rst.addEventListener("click",reset)
-
-function reset(){
-    value.innerText = 0
-}
+        counter.textContent = count;
+    })
+})

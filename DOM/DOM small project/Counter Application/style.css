@@ -29,7 +29,7 @@ body{
     gap: 5px;
 }
 
-#decrement{
+.decrement{
     border: 1px solid  black;
     padding: 2px 5px;
     background-color: rgb(220, 223, 224);
@@ -37,12 +37,13 @@ body{
     border-radius: 2px;
 }
 
-#value{
+#counter{
     border: 1px solid  black;
     padding: 2px 7px;
 }
 
-#increment{
+.increment{
+
     border: 1px solid  black;
     padding: 2px 5px;
     background-color: aliceblue;
@@ -51,7 +52,7 @@ body{
     border-radius: 2px;
 }
 
-#reset{
+.reset{
     border: 1px solid  black;
     padding: 2px 5px;
     background-color: rgb(220, 223, 224);
