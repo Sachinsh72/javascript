@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css  -->
+    <style>
+        .container{
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        #btn{
+            border-radius: 10px;
+            /* padding: 4px; */
+            height: 50px;
+            font-size: 10px;
+            cursor: pointer;
+        }
+
+        p{
+           font-size: 30px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- container  -->
+    <div class="container">
+        <p>
+            When you double click button the alert message will be displayed.
+        </p>
+        <button id="btn">
+            <h1>Click Me</h1>
+        </button>
+    </div>
+
+    <!-- js script  -->
+    <script>
+        const btn = document.getElementById("btn");
+
+        // adding a dblclick event listener to the element
+        btn.addEventListener("dblclick", function () {
+        alert("Double click on button successfully has been done ");
+});
+    </script>
+</body>
+</html>
