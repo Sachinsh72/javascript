@@ -9,12 +9,24 @@
             text-align: center;
             color: blue;
         }
+
+        span{
+            font-size: 40px;
+            font-weight: 100;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .container{
+            padding-top: 20px;
+        }
+
     </style>
 </head>
 <body>
     
     <div class="container">
-        <h1 id="demo">Mouse over me</h1>
+        <span id="demo"> Mouse over me</span>
+
     </div>
 
     <script>
@@ -31,14 +43,8 @@
         document.body.appendChild(title);
         });
 
-        tap.addEventListener("mouseout",(e)=> {
-        let title = document.createElement("h1");
-        title.className = "dom";
-        title.style.fontSize = "22px";
-        title.style.color = "black";
-        title.textContent = "Mouse Out";
-        console.log(title);
-        document.body.appendChild(title);
+        tap.addEventListener("mouseout", function () {
+        alert("mouseout event done");
         });
 
     </script>
