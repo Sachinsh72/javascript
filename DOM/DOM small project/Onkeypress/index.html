@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            color: palevioletred;
+        }
+
+        h1{
+            font-size: 40px;
+            font-weight: 100;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .container{
+            padding-top: 20px;
+        }
+
+        #demo{
+            height: 20px;
+            padding: 8px;
+            border-radius: 4px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Press key inside the input field</h1>
+        <input id="demo" type="text" placeholder="Press key inside me">
+
+    </div>
+
+    <script>
+
+        const tap = document.getElementById("demo");
+
+        tap.addEventListener("keypress",(e)=> {
+        let title = document.createElement("h1");
+        title.className = "dom";
+        title.style.fontSize = "22px";
+        title.style.color = "black";
+        title.textContent = "Key has been pressed";
+        console.log(title);
+        document.body.appendChild(title);
+        });
+
+    </script>
+</body>
+</html>
