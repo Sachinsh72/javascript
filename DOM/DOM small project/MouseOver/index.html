@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h1 id="demo">Mouse over me</h1>
+    </div>
+
+    <script>
+
+        const tap = document.getElementById("demo");
+
+        tap.addEventListener("mouseover",(e)=> {
+        let title = document.createElement("h1");
+        title.className = "dom";
+        title.style.fontSize = "22px";
+        title.style.color = "black";
+        title.textContent = "Mouse Overed";
+        console.log(title);
+        document.body.appendChild(title);
+        });
+
+    </script>
+</body>
+</html>
