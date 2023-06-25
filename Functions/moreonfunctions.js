@@ -118,5 +118,31 @@ const above200 = gameScore.find((score) => score > 200);
 console.log(above200);
 
 //findIndex
+
+const array1 = [5, 12, 8, 130, 44];
+
+const isLargeNumber = (element) => element > 13;
+
+console.log(array1.findIndex(isLargeNumber));
+
+const ages = [3, 30, 18, 20];
+
+console.log(ages.findIndex(checkAge));
+
+function checkAge(age) {
+  return age > 18;
+}
+
+
 //some
+
+const array = [1, 2, 3, 4, 5];
+
+console.log(array.some((element) => element % 2 === 0));
+
 //sort 
+
+const months = ['March', 'Jan', 'Feb', 'Dec'];
+months.sort();
+console.log();
+// Expected output: Array ["Dec", "Feb", "Jan", "March"]
