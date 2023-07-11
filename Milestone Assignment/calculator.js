@@ -7,19 +7,19 @@ let num2 = 8;   //Please biggest value
 let operator = "+";
 
 switch (operator) {
-    case "+":
+    case "+":       //addition
         let add = num1 + num2;
         console.log(`The addition of ${num1} and ${num2} is ${add}`);
         break;
-    case "-":
+    case "-":       //substraction
         let substract = num2 - num1;
         console.log(`The substraction of ${num1} from  ${num2} is ${substract}`);
         break;
-    case "*":
+    case "*":       //multiplication
         let multiply = num2 * num1;
         console.log(`The multiplication of ${num1} from  ${num2} is ${multiply}`);
         break;
-    case "/":
+    case "/":       //divide
         let divide = num2 / num1;
         console.log(`The division of ${num1} from  ${num2} is ${divide}`);
         break;
