@@ -4,7 +4,7 @@ Use error handling in javascript to achieve this output.*/
 function convertToNumber(str){
     try {
         const number = Number(str);
-        if(Number.isNaN(number)){
+        if(isNaN(number)){
             throw new Error("Invalid number");
         }
         return number;
