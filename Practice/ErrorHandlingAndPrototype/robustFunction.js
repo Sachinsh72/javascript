@@ -3,3 +3,16 @@ The function should return the person's name and age as a string in the format "
 However, if the parameter is not a valid object with the properties "name" and "age", the function should throw
 an error with the message "Invalid parameter type". Use try-catch to handle this error and return the error
 message if it occurs. */
+
+function getPerson(person){
+    try {
+        if(typeof person !== "object" || !person.name || !person.age){
+            throw new Error("Invalid parameter type")
+        }
+        return `name: ${person.name}, Age: ${person.age}`
+    } catch (error) {
+        return error.message
+    }
+}
+console.log(getPerson({name: "scahin", age: 23}));
+console.log(getPerson({ name: "sachin" })); 
